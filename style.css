@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%
+    height: 900px;
+    margin: auto;
+    background: #FFF;
+}
+
+.container > .dashboard{
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0fr;
+        grid-row-gap: 0px;
+}
+
+/* Main menu */
+
+.container .mainmenu{
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    width: 200px;
+    padding: 24px;
+    justify-content: center;
+    flex-direction: column;
+    background: #000;
+    color: #FFF;
+}
+
+div.menu{
+    margin-bottom: 80px;
+}
+.fa-solid{
+    color: #FFF;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 78px;
+}
+
+ul.menu{
+    border-bottom: 1px solid rgba(255, 255,255,0.20);
+    margin-bottom: 24px;
+}
+
+ul a i{
+    margin-right: 10px;
+}
+ul.submenu{
+    margin-top: 24px;
+}
+.header{
+    color: rgba(255, 255, 255, 0.20);
+}
+.menu li{
+    margin-bottom: 24px;
+}
+
+#logout{
+    width: 192px;
+    height: 48px;
+    padding: 0 46px 0 46px;
+    background: rgba(255, 255, 255, 0.20);
+    color: #FFF;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Today Part */
+
+.today{
+    background: #F8F7F1;
+    width: 344px;
+    padding: 32px 28px;
+}
+
+.today > div{
+    width: 288px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FDFDFD;
+    padding: 24px;
+    margin-top: 16px;
+}
+
+.today >h4{
+    margin-bottom: -2px;
+    margin-top: -5px;
+}
+
+.today > div >.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(163, 162, 162);
+    padding-bottom: 12px;
+}
+
+.today > div .tag{
+    font-size: 12px;
+    background: rgba(163, 163, 163, 0.20);
+    padding: 3px;
+}
+
+.today > div > .content > .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.today > .income > .content > .price > span{
+    color: red;
+}
+
+.today > .expences > .content > .price > span{
+    color: green;
+}
+
+.today > div > .content > .footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.today p{
+    color: #656575;
+    font-size: 14px;
+    margin-top: -2px;
+}
+
+.today span{
+    color: black;
+}
