@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <title>Car Rent</title>
 </head>
 <body>
@@ -119,9 +120,74 @@
                         </div>
                     </div>
                 </div>
-                <div class="hire"></div>
+                <div class="hire">
+                    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                    <script>
+                    const xValues = ["Total Hired", "Total canceled", "Total pendig"];
+                    const yValues = [54, 20, 26];
+                    const barColors = [
+                    "blue",
+                    "green",
+                    "red",
+                    ];
+                    new Chart("myChart", {
+                    type: "doughnut",
+                    data: {
+                        labels: xValues,
+                        datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                        }]
+                    },
+                    options: {
+                        title: {
+                        display: true,
+                        
+                        }
+                    }
+                    });
+                    </script>
+                </div>
             </div>
-            <div class="display"></div>
+            <div class="display">
+                <div class="header">
+                    <div class="search">
+                        <i class="fa-solid fa-bell"></i>
+                        <input type="search" name="" id="search" placeholder="search here">
+                    </div>
+                </div>
+                <div class="available">
+                    <h4>Car Availability</h4>
+                    <div class="content">
+                        <div class="car">
+                            <i class="fa-solid fa-car"></i>
+                            Car Number
+                            <i class="arrow">&#8595</i>
+                        </div>
+                        <div class="date">
+                            <div class="tarikh">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                Nov 20, 2022
+                            </div>
+                            <div class="saat">
+                                <i class="fa-solid fa-clock"></i>
+                                10AM
+                                <i>&#8595</i>
+                            </div>
+                                
+                        </div>
+                        <button>Check</button>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="header">
+                        <h4>Live Car Status</h4>
+                            <i class="fa-solid fa-sliders"></i>
+                            Filter
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
         
     </div>
