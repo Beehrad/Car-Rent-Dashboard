@@ -276,6 +276,42 @@ ul.submenu{
     align-items: center;
 }
 
+.status .content td.carn{
+    width: 66px;
+    height: 24px;
+    background: rgba(153, 153, 153, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status .content td .colorC{
+    width: 16px;
+    height: 16px;
+    border: 1px solid green;
+    border-radius: 100%;
+    background: green;
+    margin-right: 16px;
+}
+
+.status .content td .colorB{
+    width: 16px;
+    height: 16px;
+    border: 1px solid blueviolet;
+    border-radius: 100%;
+    background: blue;
+    margin-right: 16px;
+}
+
+.status .content td .colorR{
+    width: 16px;
+    height: 16px;
+    border: 1px solid red;
+    border-radius: 100%;
+    background: red;
+    margin-right: 16px;
+}
+
 .status .content td{
     display: flex;
     align-items: center;
